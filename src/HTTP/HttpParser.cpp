@@ -5,6 +5,7 @@
 #include "HttpParser.h"
 
 #include <algorithm>
+#include <string>
 
 #include "HttpParserErrorCodes.h"
 

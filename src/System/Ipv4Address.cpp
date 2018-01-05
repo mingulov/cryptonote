@@ -4,6 +4,7 @@
 
 #include "Ipv4Address.h"
 #include <stdexcept>
+#include <string>
 
 namespace System {
 

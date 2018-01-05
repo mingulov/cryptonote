@@ -20,7 +20,7 @@ const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 60 * 60 * 2;
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 
 //  ((uint64_t)(-1)) equals to 184467440737 09551616 coins
-const uint64_t MONEY_SUPPLY                                  = UINT64_C(10 * 1000 * 1000 * 1000 * 100 * 1000 * 1000);
+const uint64_t MONEY_SUPPLY                                  = UINT64_C(10 * 1000 * 1000 * 1000) * UINT64_C(100 * 1000 * 1000);
 const unsigned EMISSION_SPEED_FACTOR                         = 22;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
@@ -65,7 +65,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 } // parameters
 
 const char     CRYPTONOTE_NAME[]                             = "hervacoin";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff00019d9deb96f806029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101246882ef8d81b0d39ac27eea00b2454841227cc41eb8ea46f751bde9a1641b71";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
@@ -75,7 +75,7 @@ const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  10000;  //by def
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  200;    //by default, blocks count in blocks downloading
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  1000;
 
-const int      P2P_DEFAULT_PORT                              = 46236;
+const int      P2P_DEFAULT_PORT                              = 33720;
 const int      RPC_DEFAULT_PORT                              = 46237;
 
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
@@ -94,7 +94,7 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          //
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1510d13336228debfee9c918ce505efe225d8c94d045fa115";
 
 const std::initializer_list<const char*> SEED_NODES = {
-  "52.166.108.254:46236",
+  "52.166.108.254:33720",
 };
 
 struct CheckpointData {
